@@ -47,7 +47,7 @@ export default function Navbar() {
             <img
               src="https://storage.readdy-site.link/project_files/dc12d4c9-2379-4ad2-a662-8eddd181bfbf/4f9ff32b-2db7-452f-b4ac-521fae267e45_WhatsApp-Image-2026-05-21-at-3.45.50-PM.jpeg?v=ecd7f110c5a19f5612b46b6262f752c3"
               alt="PMAK Ocean Hub logo"
-              className="h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+              className="h-10 md:h-14 lg:h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity -my-2 md:-my-3 lg:-my-4"
             />
           </Link>
 
@@ -63,12 +63,6 @@ export default function Navbar() {
               className="text-sm font-medium tracking-wide transition-colors duration-300 hover:opacity-70 whitespace-nowrap text-white"
             >
               e-Foil
-            </Link>
-            <Link
-              to="/garage"
-              className="text-sm font-medium tracking-wide transition-colors duration-300 hover:opacity-70 whitespace-nowrap text-white"
-            >
-              Garage
             </Link>
             <Link
               to="/gallery"
@@ -126,13 +120,6 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
           >
             e-Foil
-          </Link>
-          <Link
-            to="/garage"
-            className="block text-white text-sm font-medium py-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Garage
           </Link>
           <Link
             to="/gallery"

@@ -5,7 +5,6 @@ import ScubaPage from "../pages/scuba/page";
 import EfoilPage from "../pages/efoil/page";
 import GalleryPage from "../pages/gallery/page";
 import BookPage from "../pages/book/page";
-import GaragePage from "../pages/garage/page";
 
 const routes: RouteObject[] = [
   {
@@ -19,10 +18,6 @@ const routes: RouteObject[] = [
   {
     path: "/efoil",
     element: <EfoilPage />,
-  },
-  {
-    path: "/garage",
-    element: <GaragePage />,
   },
   {
     path: "/gallery",

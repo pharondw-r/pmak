@@ -73,19 +73,6 @@ export default function BookPage() {
     } else {
       setFormStatus("success");
       form.reset();
-
-      // Build WhatsApp message and open chat
-      const activityLabel = activity
-        .replace(/_/g, " ")
-        .replace(/\b\w/g, (c) => c.toUpperCase());
-      const whatsappText = encodeURIComponent(
-        `Hi PMAK! I just submitted a booking request on your website.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nActivity: ${activityLabel}\nDate: ${date || "Not selected"}\nPeople: ${people}\nLocation: ${location || "Any"}\n\n${message ? `Message: ${message}` : ""}`.trim()
-      );
-      window.open(
-        `https://wa.me/971581448527?text=${whatsappText}`,
-        "_blank",
-        "noopener,noreferrer"
-      );
     }
   };
 
@@ -96,7 +83,7 @@ export default function BookPage() {
       {/* Hero */}
       <section className="relative h-[320px] md:h-[420px] w-full overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1520942702018-0865209d7472?auto=format&fit=crop&w=1400&q=80"
+          src="https://readdy.ai/api/search-image?query=A%20beautiful%20wide-angle%20photograph%20of%20a%20dive%20boat%20floating%20on%20crystal-clear%20turquoise%20ocean%20water%20during%20golden%20sunrise%2C%20warm%20golden%20light%20reflecting%20on%20calm%20sea%20surface%2C%20dive%20equipment%20visible%20on%20deck%2C%20tropical%20coastline%20in%20soft%20background%20haze%2C%20professional%20travel%20photography%20style%2C%20rich%20warm%20colors%20with%20teal%20and%20gold%20tones%2C%20cinematic%20composition%2C%20no%20text&width=1400&height=700&seq=book-hero-01&orientation=landscape"
           alt="Dive boat on calm turquoise ocean at sunrise ready for adventure"
           className="w-full h-full object-cover"
         />

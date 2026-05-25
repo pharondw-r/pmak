@@ -8,21 +8,21 @@ const certifications = [
     tag: "Beginner",
     description: "No experience needed. A half-day introduction to breathing underwater with a certified instructor by your side.",
     duration: "Half Day",
-    price: "AED 350",
+    price: "AED 250",
   },
   {
     level: "Open Water",
     tag: "Most Popular",
     description: "PADI Open Water certification. Includes 5 pool dives, 2 shore dives, 2 boat dives, and e-learning. Your first full scuba certification.",
     duration: "3 to 4 Days",
-    price: "AED 1,800",
+    price: "AED 1,600",
   },
   {
     level: "Advanced Open Water",
     tag: "Intermediate",
     description: "PADI Advanced Open Water. E-learning and 5 dives including 2 adventure deep dives and 1 night dive. Push your skills further.",
     duration: "2 to 3 Days",
-    price: "AED 1,800",
+    price: "AED 2,000",
   },
   {
     level: "Rescue Diver",
@@ -50,7 +50,7 @@ const certifications = [
     tag: "Refresh",
     description: "PADI ReActivate. Refresh your skills and knowledge if you have not dived in a while. Get back in the water with confidence.",
     duration: "1 Day",
-    price: "AED 700",
+    price: "AED 1,000",
   },
 ];
 
